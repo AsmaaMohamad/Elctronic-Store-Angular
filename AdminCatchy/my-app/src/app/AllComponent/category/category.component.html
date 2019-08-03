@@ -1,0 +1,17 @@
+<div style="text-align: center; font-style:italic; color:blue;padding-top:20px; font-size:30px" >Add Category<hr style="width: 60%"></div>
+<form style="position: relative; left:20% ; top:60px; width:60%" #addCategory (ngSubmit)="saveCategory()">
+  <div class="form-row">
+    <div class="form-group col-md-12">
+      <label for="catName">CategoryName</label>
+      <input type="text" name="Name"  [(ngModel)]="newCategory.Name" class="form-control" id="catName" required placeholder="Name ...">
+    </div>
+   
+  </div>
+  <div style="text-align: center; ">
+    <button type="submit" class="btn btn-primary" style="width: 30%">Add</button>
+  </div>
+  
+</form>
+
+  
+

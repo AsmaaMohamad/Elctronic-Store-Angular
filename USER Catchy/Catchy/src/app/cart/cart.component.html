@@ -1,0 +1,52 @@
+<!-- <p>
+  cart works!
+</p> -->
+
+<!-- <table class="table table-hover">
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+    <tr *ngFor="let item of cart" >
+    <td>{{item.Name}}</td>
+    <td>{{item.Description}}</td>
+    </tr>
+    </table> -->
+    
+   
+    <div class="super_container">
+     
+    <div class="products">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <div class="products_title" style="padding: 30px"> <h2>Cart Added items</h2></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              
+              <div class="product_grid">
+    
+    
+                <!-- Product -->
+                <div class="product" *ngFor="let item of cart" style="display: inline-block; margin-right: 5px;">
+                    <div class="product_image"><a routerLink="/productDetails/{{item.ID}}" routerLinkActive="active"><img src="assets/images/{{item.Image}}" alt=""></a></div>
+                    <div class="product_extra product_new"><a a routerLink="/categories" routerLinkActive="active">New</a></div>
+                    <div class="product_content">
+                      <div class="product_title"><a routerLink="/Product" routerLinkActive="active">{{item.Name}}</a></div>
+                      <div class="product_price">{{item.Price| currency:"USD"}}</div>
+                   <!--    <div class="product_Quantity">{{item.Quantity}}</div> -->
+                    </div>
+                  </div>
+                
+                  &nbsp;
+      
+                  
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>	

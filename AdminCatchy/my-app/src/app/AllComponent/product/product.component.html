@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row mb-5">
+        <div class="col-md-12">
+            <form #addProduct>
+                <div class="form-group">
+                    <label for="prdName">Name of Product</label>
+                    <input type="text" name="prdName" [(ngModel)]="newProduct.Name" class="form-control" id="prdName"
+                        required placeholder="Name ...">
+                </div>
+                <div class="form-group">
+                    <label for="prdDescript">Description</label>
+                    <textarea name="prdDescript" [(ngModel)]="newProduct.Description" class="form-control"
+                        placeholder="Description ..." id="prdDescript" required rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="prdQuantity">Quantity of Product</label>
+                    <input type="number" name="prdQuantity" [(ngModel)]="newProduct.Quantity" class="form-control"
+                        required id="prdQuantity" placeholder="Quantity ..." min="1">
+                </div>
+                <div class="form-group">
+                    <label for="prdPrice">Price of Product</label>
+                    <input type="number" name="prdPrice" [(ngModel)]="newProduct.Price" class="form-control" required
+                        id="prdPrice" placeholder="Price ..." min="1">
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-6">
+                        <label for="category">Select Category</label>
+                        <select class="form-control" id="listCategory" name="listCategory" [(ngModel)]="newProduct.CatID">
+                            <option *ngFor="let cat of ListOfCategory" value="{{cat.ID}}">{{cat.Name}}</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="category">Offer</label>
+                        <input type="number" name="Offer" [(ngModel)]="newProduct.Offer" class="form-control" required
+                        id="Offer" placeholder="Offer ..." min="1">
+                    </div>
+                </div>
+                <div class="form-group" >
+                    <label for="prdImg" class="mr-2">Image of Product</label>
+                    <img [src]="imageUrl" style="width:250px;height:200px">
+                    <input  type="file" (change)="handleFileInput($event.target.files)" [(ngModel)]="newProduct.Image" name="prdImage">
+                </div>
+               <br>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <input type="submit" value="Save Changes" class="btn btn-primary btnSumbit text-center"
+                           (click)="SaveProduct()"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

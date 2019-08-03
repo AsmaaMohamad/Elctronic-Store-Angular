@@ -1,0 +1,15 @@
+I:\iti\angular\EcommerceAngularDB\bin\Debug\EcommerceAngularDB.exe.config
+I:\iti\angular\EcommerceAngularDB\bin\Debug\EcommerceAngularDB.exe
+I:\iti\angular\EcommerceAngularDB\bin\Debug\EcommerceAngularDB.pdb
+I:\iti\angular\EcommerceAngularDB\bin\Debug\EntityFramework.dll
+I:\iti\angular\EcommerceAngularDB\bin\Debug\EntityFramework.SqlServer.dll
+I:\iti\angular\EcommerceAngularDB\bin\Debug\EntityFramework.xml
+I:\iti\angular\EcommerceAngularDB\bin\Debug\EntityFramework.SqlServer.xml
+I:\iti\angular\EcommerceAngularDB\obj\Debug\EcommerceAngularDB.csprojAssemblyReference.cache
+I:\iti\angular\EcommerceAngularDB\obj\Debug\EcommerceAngularDB.csproj.CoreCompileInputs.cache
+I:\iti\angular\EcommerceAngularDB\obj\Debug\EcommerceAngularDB.csproj.CopyComplete
+I:\iti\angular\EcommerceAngularDB\obj\Debug\EcommerceAngularDB.exe
+I:\iti\angular\EcommerceAngularDB\obj\Debug\EcommerceAngularDB.pdb
+I:\iti\angular\EcommerceAngularDB\obj\Debug\EcommerceAngularDB.Migrations.asd.resources
+I:\iti\angular\EcommerceAngularDB\obj\Debug\EcommerceAngularDB.csproj.GenerateResource.cache
+I:\iti\angular\EcommerceAngularDB\obj\Debug\EcommerceAngularDB.Migrations._as.resources

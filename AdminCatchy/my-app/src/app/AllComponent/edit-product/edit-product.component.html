@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-12 text-center">
+          <img src="assets/images/{{selectedProduct.Image}}" class="img-fluid" height="350" width="350"/>
+      </div>
+  </div>
+  <div class="row mb-5">
+      <div class="col-md-12">
+              <!-- (onsubmit)="SaveChanges(selectedProduct.ID)" -->
+          <form #changeProduct>
+              <div class="form-group">
+                  <label for="prdName">Name of Product</label>
+                  <input type="text" name="Name" [(ngModel)]="selectedProduct.Name" class="form-control" id="prdName" required placeholder="" [value]="selectedProduct.Name">
+              </div>
+              <div class="form-group">
+                  <label for="prdDescript">Description</label>
+                  <textarea [(ngModel)]="selectedProduct.Description" name="Description" class="form-control" id="prdDescript" required rows="3">{{selectedProduct.Description}}</textarea>
+              </div>
+                  <div class="form-group">
+                      <label for="prdQuantity">Quantity of Product</label>
+                      <input type="number" [(ngModel)]="selectedProduct.Quantity" name="Quantity"  class="form-control" required id="prdQuantity" placeholder="" min="1" [value]="selectedProduct.Quantity">
+                  </div>
+                  <div class="form-group">
+                      <label for="prdPrice">Price of Product</label>
+                      <input type="number"  [(ngModel)]="selectedProduct.Price" name="Price" class="form-control" required id="prdPrice" placeholder="" min="1" [value]="selectedProduct.Price">
+                  </div>
+                  <div class="form-group row">
+                      <div class="col-md-2">
+                          <label>This Product from Category</label>
+                      </div>
+                      <div class="col-md-8">
+                          <label for="category">Select Category</label>
+                          <select class="form-control" id="listCategory" name="listCategory" [(ngModel)]="selectedProduct.CatID">
+                              <option *ngFor="let cat of ListOfCategory" value="{{cat.ID}}">{{cat.Name}}</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12 text-center">
+                          <input type="button" value="Save Changes" class="btn btnSumbit text-center"(click)="SaveChanges(selectedProduct.ID,selectedProduct)"/>
+                      </div>
+                  </div>
+          </form>
+      </div>
+  </div>
+</div>
+
